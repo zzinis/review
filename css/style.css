@@ -179,13 +179,13 @@ a {
     text-indent: -9999px;
     margin-top: -1px;
     transition: 0.5s; }
-  .btnCall:hover span {
+  .btnCall.on span {
     transform: translateX(100%);
     opacity: 0; }
-  .btnCall:hover::before {
+  .btnCall.on::before {
     transform: rotate(45deg);
     top: calc(50% - 1px); }
-  .btnCall:hover::after {
+  .btnCall.on::after {
     transform: rotate(-45deg);
     bottom: calc(50% - 1px); }
 

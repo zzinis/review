@@ -134,15 +134,15 @@
         transition: 0.5s;
     }
 
-    &:hover span{
+    &.on span{
         transform: translateX(100%);
         opacity: 0;
     }
-    &:hover::before{
+    &.on::before{
         transform: rotate(45deg);
         top: calc(50% - 1px);
     }
-    &:hover::after{
+    &.on::after{
         transform: rotate(-45deg);
         bottom: calc(50% - 1px);
     }
