@@ -1,4 +1,4 @@
 var btn = document.querySelector(".btnCall");
-        btn.onclick = function(){
-            btn.classList.toggle('on');
-        }
+btn.onclick = function(){
+    btn.classList.toggle('on');
+}
