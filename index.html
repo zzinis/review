@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="box1">
+        <div class="wrap">
+            <h1>로그인해주셔서 감사합니다</h1>
+            <button class="close">닫기</button>
+        </div>
+    </div>
+
+    <button id="login">로그인</button>
+
+    <!-- <p class="hello">안녕</p> -->
+
+    <script>
+        // document.querySelector('.hello').innerHTML = '안녕하세요';
+
+        // $('.hello').html('안녕하세요');
+
+        // $('.hello').css('color','red');
+
+        // $('.hello').addClass('show')
+
+        $('#login').on('click',function(){
+            $('.box1').css('display','block');
+        })
+        $('.close').toggleClass('.show-modal');
+
+    </script>
     
 </body>
 </html>

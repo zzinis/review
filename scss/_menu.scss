@@ -1,7 +1,13 @@
 @charset 'utf-8';
 
+@import 'reset';
+@import 'box.scss';
+@import 'table.scss';
+@import 'join.scss';
 
->.wrap{
+
+
+.wrap{
     width: 400px;
     
     .navbar{
@@ -33,17 +39,23 @@
 
     .list{
         width: 100%;
-        display: none;
-
-        .show{
-        display: block;
-        }
+        overflow: hidden;
+        height: 0px;
+        transition: all 1s;
+        visibility: hidden;
+        background: #666;
         li{
-            border-bottom: 1px solid #111;
-            
+            border-bottom: 1px solid #111;   
         }
         
-        
+    }
+    .show{
+        visibility: visible;
+        height: 200px;
+    }  
+    .on{
+        visibility: hidden;
+        height: 0;
     }
 
     
