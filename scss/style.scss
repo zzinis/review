@@ -9,7 +9,7 @@
 
 .box1{
     width: 400px;
-    height: 200px;
+    height: 300px;
     border: 1px solid #111;
     border-radius: 5px;
     display: none;
@@ -22,7 +22,16 @@
         h1{
             font: 18px/1 'arial';
             color: red;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        form{
+            width: 100%;
+            input{
+                display: block;
+                margin-bottom: 15px;
+                width: 200px;
+                height: 30px;
+            }
         }
         .close{
             display: block;
@@ -34,7 +43,7 @@
 
         }
     }
-    .show-modal{
+    .on{
         display: none;
     }
 }

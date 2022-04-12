@@ -12,6 +12,10 @@
     <div class="box1">
         <div class="wrap">
             <h1>로그인해주셔서 감사합니다</h1>
+            <form action="/">
+                <input type="text">
+                <input type="password">
+            </form>
             <button class="close">닫기</button>
         </div>
     </div>
@@ -32,9 +36,10 @@
         $('#login').on('click',function(){
             $('.box1').css('display','block');
         })
-        $('.close').toggleClass('.show-modal');
+        $('.close').on('click',function(){
+            $('.box1').css('display','none');
+        })
 
     </script>
-    
 </body>
 </html>

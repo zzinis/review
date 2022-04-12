@@ -434,7 +434,7 @@ fieldset {
 
 .box1 {
   width: 400px;
-  height: 200px;
+  height: 300px;
   border: 1px solid #111;
   border-radius: 5px;
   display: none; }
@@ -445,7 +445,14 @@ fieldset {
     .box1 .wrap h1 {
       font: 18px/1 'arial';
       color: red;
-      margin-bottom: 20px; }
+      margin-bottom: 30px; }
+    .box1 .wrap form {
+      width: 100%; }
+      .box1 .wrap form input {
+        display: block;
+        margin-bottom: 15px;
+        width: 200px;
+        height: 30px; }
     .box1 .wrap .close {
       display: block;
       width: 50px;
@@ -453,7 +460,7 @@ fieldset {
       font: 15px/30px 'arial';
       text-align: center;
       background: red; }
-  .box1 .show-modal {
+  .box1 .on {
     display: none; }
 
 #login {
