@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    
+</head>
+<body>
+    <form action="result.html" method="get">
+        <fieldset>
+            <legend>회원가입폼</legend>
+
+            <table border="1">
+                <tr>
+                    <th scope="row">이름</th>
+                    <td>
+                        <input type="text" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">취미</th>
+                    <td>
+                        <input type="checkbox" name="hobby" id="reading" value="reading">
+                        <label for="reading">독서</label>
+                        <input type="checkbox" name="hobby" id="movie" value="movie">
+                        <label for="movie">영화</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">이메일</th>
+                    <td>
+                        <input type="text" name="email">
+                        @
+                        <select name="company" id="">
+                            <option value="naver">naver.com</option>
+                            <option value="daum">daum.com</option>
+
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th colspan="2">
+                        <input type="submit" value="회원가입">
+                    </th>
+                </tr>
+
+            </table>
+
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

@@ -32,19 +32,24 @@
                 width: 200px;
                 height: 30px;
             }
+            .go{
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                font: 15px/30px 'arial';
+                text-align: center;
+                background: red;
+            }
+            .close{
+                display: inline-block;
+                width: 50px;
+                height: 30px;
+                font: 15px/30px 'arial';
+                text-align: center;
+                background: red;
+            }
         }
-        .close{
-            display: block;
-            width: 50px;
-            height: 30px;
-            font: 15px/30px 'arial';
-            text-align: center;
-            background: red;
 
-        }
-    }
-    .on{
-        display: none;
     }
 }
 
