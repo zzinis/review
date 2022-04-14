@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="#" class="btnPlus">plus</a>
+    <a href="#" class="btnMinus">minus</a>
+
+    <a href="#" class="btnLeft">왼쪽으로회전</a>
+    <a href="#" class="btnRight">오른쪽으로회전</a>
+
+    <div id="box"></div>
+
+    <script>
+        const btnPlus = document.querySelector('.btnPlus');
+        const btnMinus = document.querySelector('.btnMinus');
+        const btnLeft = document.querySelector('.btnLeft');
+        const btnRight = document.querySelector('.btnRight');
+        const box = document.querySelector('#box');
+
+        
+        let num = 0;
+
+        btnPlus.addEventListener('click', e=>{
+            e.preventDefault();
+            num++
+            console.log(num);
+        })
+
+        btnMinus.addEventListener('click',e=>{
+            e.preventDefault();
+            num--
+            console.log(num);
+        })
+
+        
+
+    </script>
+</body>
+</html>
