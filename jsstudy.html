@@ -15,16 +15,16 @@
     <a href="#" class="btnLeft">왼쪽으로회전</a>
     <a href="#" class="btnRight">오른쪽으로회전</a>
 
-    <div id="box"></div>
+    <div id="box3"></div>
 
     <script>
         const btnPlus = document.querySelector('.btnPlus');
         const btnMinus = document.querySelector('.btnMinus');
         const btnLeft = document.querySelector('.btnLeft');
         const btnRight = document.querySelector('.btnRight');
-        const box = document.querySelector('#box');
+        const box = document.querySelector('#box3');
+        const deg = 45;
 
-        
         let num = 0;
 
         btnPlus.addEventListener('click', e=>{
@@ -39,7 +39,17 @@
             console.log(num);
         })
 
-        
+        btnLeft.addEventListener('click', e=>{
+            e.preventDefault();
+            num--
+            box.style.transform = `rotate(${num * deg}deg)`;
+        })
+
+        btnRight.addEventListener('click', e=>{
+            e.preventDefault();
+            num++
+            box.style.transform = `rotate(${num * deg}deg)`;
+        })
 
     </script>
 </body>
