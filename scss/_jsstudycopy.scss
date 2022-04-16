@@ -20,6 +20,11 @@
 ul{
     li{
         color: gray;
+        cursor: pointer;
+
+        &.on{
+            color: black;
+        }
     }
 }
 
@@ -29,6 +34,7 @@ ul{
     border: 1px solid #999;
     margin: 50px;
     position: relative;
+    perspective: 700px;
 
     article{
         width: 100%;
@@ -41,5 +47,14 @@ ul{
         align-items: center;
         color: #fff;
         font-size: 50px;
+        opacity: 0;
+        transform: rotateY(-180deg);
+        transition: 0.5s;
+
+        &.on{
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+
     }
 }
