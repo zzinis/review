@@ -32,14 +32,21 @@
         const wrap = document.querySelector('#wrap');
         const box1 = document.querySelector('article');
 
-        for(let i=0; i<btns.length; i++ ){
-            btns.addEventListener('click', e=>{
-                for(let i of btns){
-                    i.classList.remove('on');
+        // for(let i=0; i<btns.length; i++ ){
+        //     btns[i].addEventListener('click', e=>{
+        //         for(let i of btns){
+        //             i.classList.remove('on');
 
-                }
-                btns[i].classList.add('on');
-            });
+        //         }
+        //         btns[i].classList.add('on');
+        //     });
+        // }
+
+        function activation(index, list){
+            for(let el of list){
+                el.classList.remove('on');
+            }
+            list[index].classList.add('on');
         }
 
         wrap.addEventListener("click", ()=>{
