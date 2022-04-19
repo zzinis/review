@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="js/study.js"></script>
 </head>
 <body>
     <section id="wrap">
@@ -32,15 +33,12 @@
         const wrap = document.querySelector('#wrap');
         const box1 = document.querySelector('article');
 
-        // for(let i=0; i<btns.length; i++ ){
-        //     btns[i].addEventListener('click', e=>{
-        //         for(let i of btns){
-        //             i.classList.remove('on');
-
-        //         }
-        //         btns[i].classList.add('on');
-        //     });
-        // }
+        for(let i=0; i<btns.length; i++ ){
+            btns[i].addEventListener('click', e=>{
+                activation(i, btns);
+                activation(i, boxs);
+            });
+        }
 
         function activation(index, list){
             for(let el of list){
