@@ -1,8 +1,13 @@
-const boxs = document.querySelectorAll('#row');
+        const boxs = document.querySelectorAll('#row');
         const btns = document.querySelectorAll('.btns li');
 
-        const wrap = document.querySelector('#wrap');
+        const wrap = document.querySelector('#wrap1');
         const box1 = document.querySelector('article');
+
+        wrap.addEventListener("click",()=>{
+            let isOn = wrap.classList.contains("on");
+            console.log(isOn);
+        })
 
         for(let i=0; i<btns.length; i++ ){
             btns[i].addEventListener('click', e=>{
@@ -17,7 +22,3 @@ const boxs = document.querySelectorAll('#row');
             }
             list[index].classList.add('on');
         }
-
-        wrap.addEventListener("click", ()=>{
-            box1.style.backgroundColor = "hotpink";
-        });
