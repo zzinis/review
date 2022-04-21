@@ -7,6 +7,14 @@
         wrap.addEventListener("click",()=>{
             let isOn = wrap.classList.contains("on");
             console.log(isOn);
+
+            if(isOn){
+                wrap.classList.remove("on");
+
+            }else{
+                wrap.classList.add("on");
+
+            }
         })
 
         for(let i=0; i<btns.length; i++ ){
